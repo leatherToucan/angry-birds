@@ -13,6 +13,9 @@ class SlingShot{
         this.sling3 = loadImage("sprites/sling3.png");
         World.add(world, this.sling);
     }
+    attach(body){
+        this.sling.bodyA = body;
+    }
 
     fly(){
         this.sling.bodyA = null;
